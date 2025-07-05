@@ -1,0 +1,18 @@
+- its use (pm2) - production process manager
+  - auto-restart (crashes)
+  - watch mode (reload app automate)
+  - log manage (save stdout/stderr logs file)
+  - monitor (cpu, memory, uptime, and logs)
+  - cluster mode (all uses cpu cores)
+  - startup scripts (set-up app to auto-start on server reboot)
+  - multiple apps (manage multiple app)
+
+- command
+  - pm2 list (list all running apps)
+  - pm2 logs (view live logs)
+  - pm2 restart smur-api (restart app by name)
+  - pm2 stop smur-api (stop app)
+  - pm2 delete smur-api (delete process list)
+  - pm2 monit (monitor cpu/memory )
+  - pm2 save (save process list across reboots)
+  - pm2 startup (Setup auto-start on system boot)
