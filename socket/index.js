@@ -7,7 +7,10 @@ const setupSocket = (server) => {
     },
   });
   io.on("connection", (socket) => {
-    console.log("user connected");
+    console.log("a user connected");
+    socket.on("disconnect", () => {
+      console.log("user disconnected");
+    });
   });
 };
 
